@@ -64,9 +64,10 @@ Demo
 
 There are two demos included.
 
-### [demo.html](https://rawgit.com/cronin4392/FrozenTables/master/demo.html)
+### [Basic - demo.html](https://rawgit.com/cronin4392/FrozenTables/master/demo.html)
 - Contains two tables with set size. One initialized with defaults (1 frozen row, 1 frozen column) the other with rows and columns set as data attribute
-### [demo-fullpage.html](https://rawgit.com/cronin4392/FrozenTables/master/demo-fullpage.html)
+
+### [Fullpage - demo-fullpage.html](https://rawgit.com/cronin4392/FrozenTables/master/demo-fullpage.html)
 - A table covering the window
 
 PHP files can be used to generate more tables
