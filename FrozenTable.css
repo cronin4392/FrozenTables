@@ -1,0 +1,67 @@
+.frozen-table {
+	position: relative;
+	/*height: 100%;
+	width: 100%;
+	overflow: auto;*/
+}
+
+.frozen-table--clones {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	overflow: hidden;
+
+	pointer-events: none;
+}
+
+.frozen-table--clone {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.frozen-table--clone.visible {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.frozen-table--row,
+.frozen-table--column,
+.frozen-table--row-column {
+	background-color: #dddddd;
+	z-index: 1;
+}
+
+.frozen-table--row {
+	
+}
+
+	.frozen-table--row table *:not(thead) tr {
+		/*visibility: hidden;*/
+	}
+
+.frozen-table--column {
+	
+}
+
+	.frozen-table--column th:not(.col-0),
+	.frozen-table--column td:not(.col-0) {
+		/*visibility: hidden;*/
+	}
+
+.frozen-table--row-column {
+	background-color: #cccccc;
+	z-index: 2;
+}
+
+	.frozen-table--row-column table *:not(thead) tr {
+		/*visibility: hidden;*/
+	}
