@@ -1,9 +1,6 @@
 Frozen Table Cells
 ==================
 
-Introduction
-------------
-
 A plugin that enables locked rows and columns on HTML tables.
 
 
@@ -17,7 +14,7 @@ Installation
 Usage
 -----
 
-Default:
+### Default:
 
 ```
 <script>
@@ -25,7 +22,17 @@ Default:
 </script>
 ```
 
-Options:
+### Multiple:
+
+```
+<script>
+	$('table').each(function() {
+		new FrozenTable($(this));
+	});
+</script>
+```
+
+### Options:
 
 ```
 <script>
@@ -38,7 +45,7 @@ Options:
 </script>
 ```
 
-Data Attributes:
+### Data Attributes:
 
 ```
 <html>
@@ -56,9 +63,13 @@ Demo
 ----
 
 There are two demos included.
-- demo.html          - Contains two tables with set size. One initialized with defaults (1 frozen row, 1 frozen column) the other with rows and columns set as data attribute
-- demo-fullpage.html - A table covering the window
-- PHP files can be used to generate more tables
+
+### [demo.html](https://rawgit.com/cronin4392/FrozenTables/master/demo.html)
+- Contains two tables with set size. One initialized with defaults (1 frozen row, 1 frozen column) the other with rows and columns set as data attribute
+### [demo-fullpage.html](https://rawgit.com/cronin4392/FrozenTables/master/demo-fullpage.html)
+- A table covering the window
+
+PHP files can be used to generate more tables
 
 
 Author
